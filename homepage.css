@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --white-color: #ffffff;
+    --blue-color:  #2393d2;
+    --orange-color: #f4821f;
+    --text-color: black;
+}
+
+nav{
+    height: 7rem;
+    width: 100vw;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    /* position: fixed; */
+    top: 0%;
+    border-bottom: .05rem solid gray;
+}
+
+.search_icon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color);
+    border-width: .1rem .1rem .1rem 0;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+
+.search_icon i{
+    color: black;
+    font-size: 2.8rem;
+}
+
+.search{
+    width: 40vw;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    width: 90%;
+    height: 100%;
+    font-size: 2rem;
+}
+
+nav img{
+    height: 6.2rem;
+}
+
+nav a{
+    height: 3.7rem;
+    margin: 1.7rem 0rem;
+    padding: 0px 1.4rem;
+    background-color: #f4821f;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+    align-items: center;
+    align-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #2393d2;
+    text-decoration: underline;
+}
+
+
+.compare_section{
+    width: 100vw;
+    padding: 3% 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compare_section p{
+    font-size: 4rem;
+    color: var(--orange-color);
+    margin: 0 3rem;
+}
+
+.phone1 img{
+    width: 19rem;
+}
+.phone2 img{
+    width: 19rem;
+}
+
+.compare_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compare_button button{
+    background-color: var(--orange-color);
+    border: none;
+    height: 4rem;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.compare_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compare_input label{
+    font-size: 1.5rem;
+}
+.compare_input input{
+    height: 2.5rem;
+    margin: 0 3rem 0 1rem;
+}
+
+.compare_result{
+    margin: 2% 9%;
+    display: flex;
+}
+
+.phone1_result{
+    border-right: 2px solid gray;
+    width: 100%;
+}
+
+.phone1_result p{
+    font-size: 2.5rem;
+}
+.phone2_result{
+    width: 100%;
+    padding: 0 0 0 3rem;
+}
+
+.phone2_result p{
+    font-size: 2.5rem;
+}
+/* *****************   contact css************** */
+
+span{
+    color: var(--orange-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input_box input,
+.contact form textarea{
+    border: none;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--blue-color);
+    border-radius: .8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input_box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2.8rem;
+    text-decoration: none;
+    background: var(--orange-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 .1rem var(--orange-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    box-shadow: 0 0 .5rem var(--orange-color);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="homepage.css">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <nav>
+        <div><img src="https://vsmthane.org/wp-content/uploads/2022/02/vsmthane-logo.jpg" alt="vsmthane-logo"></div>
+        <div id="search" class="search">
+            <input type="text" id="search_input" placeholder="Search Mobile">
+            <div class="search_icon" id="search_icon">
+                <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <a href="#contact">Contact Us</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+
+    <div class="compare_section">
+        <div class="phone1" ><img id="phone1_img" src="https://m.media-amazon.com/images/I/81tb1u-uIGL.AC_UY327_FMwebp_QL65.jpg" alt=""></div>
+        <p>VS</p>
+        <div class="phone2" ><img id="phone2_img" src="https://m.media-amazon.com/images/I/51VHf1Be-XL.AC_UY327_FMwebp_QL65.jpg" alt=""></div>
+    </div>
+    <div class="compare_button"><button id="compare_button" > Compare Phones</button></div>
+    <div class="compare_input">
+        <label for="cphone1"> Phone 1 :</label>
+        <input type="text" name="cphone1" id="cphone1">
+        <label for="cphone2"> Phone 2 :</label>
+        <input type="text" name="cphone2" id="cphone2">
+    </div>
+    <div class="compare_result">
+        <div class="phone1_result" id="phone1_result">
+
+        </div>
+        <div class="phone2_result" id="phone2_result">
+
+        </div>
+    </div>
+
+
+
+      <!-- contact section  -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+
+        <form action="#">
+            <div class="input_box">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="Email Address" id="email" required>
+            </div>
+
+            <div class="input_box">
+                <input type="text" placeholder="Mobile Number" id="mobile_number">
+                <input type="text" placeholder="Email Subjects" id="email_subject">
+            </div>
+            <textarea id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" class="btn" id="send_message_button">
+        </form>
+    </section>
+
+
+    <!-- send email  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script src="homepage.js"></script>
+</body>
+</html>
